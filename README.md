@@ -3,7 +3,9 @@ Project Nice or spice? Cannabis Detection by Microscope Inspection in GIP Lab Te
 
 # Using CNN classifier:
 There are 4 scripts:
-1. dataset_to_array.py - 
+1. CNN_dataset_to_array.py
+   This script take the dataset as input, resize the images, and saves (in keras) a 4D array of the dataset. This part is separated from the CNN model training because this part takes a lot of time, so better do it once and save the array than do it every time we run the model.
+2. CNN 
 Note that dataset images are resized so that the training will take a bearable time to run (1-2 hours for training after resize).
 
 CNN classifier was created with common layers and parameters that suits our dataset.
