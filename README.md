@@ -1,5 +1,5 @@
 # project_cannabis
-Project Nice or spice? Cannabis detection by Microscope inspection in GIP Lab Technion
+Project Nice or spice? Cannabis Detection by Microscope Inspection in GIP Lab Technion
 
 # Using CNN Classifier:
 
