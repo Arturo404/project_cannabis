@@ -2,7 +2,7 @@
 Project Nice or spice? Cannabis Detection by Microscope Inspection in GIP Lab Technion
 
 # Using CNN classifier:
-There are 4 scripts:
+There are 3 scripts:
 1. CNN_classifier.py
    This script is the longest to run, but is the easiest to use.
    This is the initial script that takes as input the images, creates a model and outputs model results (such as accuracy and loss).
