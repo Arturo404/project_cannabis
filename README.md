@@ -20,6 +20,17 @@ Notes:
 * Dataset images are resized so that the training will take a bearable time to run (1-2 hours for training after resize).
 * CNN classifier was created with common layers and parameters that suits our dataset. Layers and parameters are detailed in "CNN_architecture_details" file, attached to this repository.
 
+# Using Predictor script:
+Predictor.py is the final classification that combine CNN classifier and YOLO object detection (Method 3 in report).
+It takes as input images, and output a CSV file with the classification and detections. It also ouptut the images with YOLO detections
+to run this script you must:
+1. put predictor.py in yolov4\darknet folder.
+2. create a "predictor" folder in yolov4\darknet folder.
+3. create an "input" and "output" folders in yolov4\darknet folder.
+4. put input images in "imput folders".
+5. run the script ( open cmd in darknet directory and run "py predictor.py")
+6. wait until end of run :)
+7. Predictor.csv results will be in yolov4\darknet\output folder (images with YOLO detections will be there too)
 
 # Annotating images:
 
