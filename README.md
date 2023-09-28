@@ -1,7 +1,13 @@
 # project_cannabis
 Project Nice or spice? Cannabis Detection by Microscope Inspection in GIP Lab Technion
 
-# Using CNN Classifier:
+# Using CNN classifier:
+There are 4 scripts:
+1. dataset_to_array.py - 
+Note that dataset images are resized so that the training will take a bearable time to run (1-2 hours for training after resize).
+
+CNN classifier was created with common layers and parameters that suits our dataset.
+Layers and parameters are detailed in "CNN_architecture_details" file, attached to this repository.
 
 
 # Annotating images:
