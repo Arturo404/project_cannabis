@@ -4,16 +4,17 @@ Project Nice or spice? Cannabis Detection by Microscope Inspection in GIP Lab Te
 # Using CNN classifier:
 There are 4 scripts:
 1. CNN_classifier.py
+   This script is the longest to run, but is the easiest to use.
    This is the initial script that takes as input the images, creates a model and outputs model results (such as accuracy and loss).
-2. CNN_dataset_to_array.py
+3. CNN_dataset_to_array.py
    This script is made as an helper for the next script.
    It take the image dataset as input, resize the images, and saves a 4D array of the dataset in keras.
    This part is separated from the CNN model training because this part takes a lot of time, so better do it once and save the array than do it every time we run the model.
-3. CNN_k_fold.py
-   This script creates the CNN model and train it with different train an validation subsets (k times).
-   It saves each trained model.
-4. CNN_using_saved_model.py
-   This script runs 
+4. CNN_k_fold.py
+   It creates the CNN model and train it with different train an validation subsets (k times).
+   Then it saves each trained model.
+   *** It is possible to delete the k-fold part and run the model only once with desired division of train, validation and test (as done in CNN_classifier file).
+   
 
 Notes:
 * Dataset images are resized so that the training will take a bearable time to run (1-2 hours for training after resize).
