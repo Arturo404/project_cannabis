@@ -6,7 +6,7 @@ There are 3 scripts:
 1. CNN_classifier.py
    This script is the longest to run, but is the easiest to use.
    This is the initial script that takes as input the images, creates a model and outputs model results (such as accuracy and loss).
-3. CNN_dataset_to_array.py
+3. CNN_preprocessing.py
    This script is made as an helper for the next script.
    It take the image dataset as input, resize the images, and saves a 4D array of the dataset in keras.
    This part is separated from the CNN model training because this part takes a lot of time, so better do it once and save the array than do it every time we run the model.
