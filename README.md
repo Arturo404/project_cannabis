@@ -3,19 +3,21 @@ Project Nice or spice? Cannabis Detection by Microscope Inspection in GIP Lab Te
 
 # Using CNN classifier:
 There are 3 scripts:
-1. CNN_classifier.py
+1. **CNN_preprocessing_and_training.py**
    This script is the longest to run, but is the easiest to use.
    This is the initial script that takes as input the images, creates a model and outputs model results (such as accuracy and loss).
-3. CNN_preprocessing.py
-   This script is made as an helper for the next script.
+3. **CNN_preprocessing.py**
+   This script is made as an helper for the k_fold script.
    It take the image dataset as input, resize the images, and saves a 4D array of the dataset in keras.
    This part is separated from the CNN model training because this part takes a lot of time, so better do it once and save the array than do it every time we run the model.
-4. CNN_k_fold.py
+4. **CNN_k_fold.py**
    It creates the CNN model and train it with different train an validation subsets (k times).
    Then it saves each trained model.
    *** It is possible to delete the k-fold part and run the model only once with desired division of train, validation and test (as done in CNN_classifier file).
-   
-
+5. **CNN_predictor.zip**
+   Contains all files (except for one - mentionned at the end of the paragraph) and folders needed to run the CNN classifier on input images and output a prediction of each image.
+   You must enter the input images in the predictor/input_images file, then run "py CNN_predictor.py" on the command line, and a CSV file with the predictions will be created and saved in predictor/output file. The one exception is model1.h5 file which is to heavy to be uploaded to GitHub. This file is in lab's computer in darknet/cnn_model_files/model1.h5, and in my computer (Emma - you can contact me via the GIP lab).
+ 
 Notes:
 * Dataset images are resized so that the training will take a bearable time to run (1-2 hours for training after resize).
 * CNN classifier was created with common layers and parameters that suits our dataset. Layers and parameters are detailed in "CNN_architecture_details" file, attached to this repository.
