@@ -14,7 +14,7 @@ There are 3 scripts:
    It creates the CNN model and train it with different train an validation subsets (k times).
    Then it saves each trained model.
    *** It is possible to delete the k-fold part and run the model only once with desired division of train, validation and test (as done in CNN_classifier file).
-5. **CNN_predictor.zip**
+5. **CNN_classifier.zip**
    Contains all files (except for one - mentionned at the end of the paragraph) and folders needed to run the CNN classifier on input images and output a prediction of each image.
    You must enter the input images in the predictor/input_images file, then run "py CNN_predictor.py" on the command line, and a CSV file with the predictions will be created and saved in predictor/output file. The one exception is model1.h5 file which is to heavy to be uploaded to GitHub. This file is in lab's computer in darknet/cnn_model_files/model1.h5, and in my computer (Emma - you can contact me via the GIP lab).
  
